@@ -1,0 +1,221 @@
+*{
+    margin:0;
+    padding: 0;
+    top:0;
+    right:0;  
+    box-sizing: border-box;
+}
+:root{
+    --crimson:rgb(231, 71, 135);
+    --white:white;
+    --main-bg-shadow:#d5deed;
+}
+.navbar_first{
+    background: var(--main-bg-shadow);
+    position: relative;
+    background-position: 100%;
+    background-size: auto;
+}
+nav .navbar-brand img{
+    width:40%;
+}
+
+a.navbar-brand{
+    padding-left: 4%;
+    
+}
+nav .collapse{
+    width:400px;
+}   
+.navbar-nav{
+    justify-content: space-between;
+    width:40%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: var(--crimson);
+}
+
+/*first*/
+.first-page{
+
+    align-items: center;
+    justify-content: center;
+}
+
+.first-page .content h1{
+    font-size: 60px;
+}
+.first-page .content p{
+    font-size: 25px;
+}
+.start{
+    background: var(--crimson);
+    border: none;
+    padding: 2%;
+    color:var(--white);
+    font-weight: 500;
+}
+.start:hover{
+    background: rgb(2, 48, 94);
+}
+.first-page .tesco_image{
+    text-align: center;
+}
+.first-page .container .row .col-md-6{
+    margin:5% 0;
+}
+.first-page .container .row .content{
+    margin:10% 0;
+}
+
+/*testimonials*/
+.testimonils,.experts,.case-study,.about,.details{
+    margin: 10%;
+}
+.testimonils hr,.experts hr,.case-study hr,.about hr,.details hr{
+    max-width:100px;
+    height: 1vh;
+    background: var(--crimson);
+    border:none;
+}
+.testimonils .container{
+    width: 100%;
+    margin: auto;
+}
+.testimonils .row .grow_card{
+    width:30%;
+    padding: 20px;
+    text-align: center;
+    margin:10% auto;
+}
+.grow_card:hover{
+    border-radius: 5px;
+    box-shadow:4px 4px 20px  var(--main-bg-shadow);
+    transition: all .4s ease;
+}
+.grow_card h3{
+    padding: 10px 0;
+    font-size: 25px;
+}
+.grow_card p{
+    font-size: 20px;
+}
+
+
+/*experts*/
+.carousel .carousel-inner .carousel-item .team{
+    width:80%;
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 20% 50%;
+    border: 1px solid  var(--main-bg-shadow);
+}
+.carousel{
+    margin: 10% auto;
+}
+
+/*case-study*/
+
+.case,.about-content{
+    width:300px;
+    height:100%;
+    margin: auto;
+    padding: 0;
+    margin-top: 100px;
+    box-shadow: 10px 20px 20px  var(--main-bg-shadow);
+    border-radius: 20px 20px;
+}
+.case img,.about img{
+    width:100%;
+    border-radius: 20px 20px 0 0;
+    
+}
+
+
+/*about*/
+.about img{
+    margin-bottom: 10%;
+}
+.about .vec{
+    width: 50px;
+    background:  var(--main-bg-shadow);
+    border-radius: 50%;
+    padding: 8px;
+    margin-top: -15%;
+    margin-left: 10px;
+    border:2px solid var(--white);
+    transform: rotate(7deg);
+}
+
+/*details*/
+.details .row{
+    margin-top: 10%;
+}
+form input,textarea{
+    width:100vh;
+    height: 50px;
+    box-shadow: 2px 2px 2px 2px  var(--main-bg-shadow);
+    border: none;
+}
+textarea{
+    height: 100px;
+}
+.call,.email,.address{
+    box-shadow:  2px 2px 2px 2px  var(--main-bg-shadow);
+    width:100%;
+    height: 50px;
+    margin-top: 25px;
+    padding: 10px;
+}
+.ca,.em,.add{
+    margin-right: 20px;
+}
+
+/*footer*/
+.footer{
+    width:100%;
+    height:60vh;
+    background-color: rgb(2, 48, 94);
+    text-align: center;
+    padding-top: 4rem;
+}
+.forcode-footer{
+    margin: auto;
+    padding: 0 10px;
+}
+.forcode-footer img{
+    justify-content: center;
+}
+.forcode-footer span svg{
+    margin: 10px;
+    color: var(--white);
+}
+
+/*media query*/
+
+@media only screen and (max-width:600px){
+    .testimonils .row .grow_card{
+        flex-direction: row;
+        width:100%;
+    }
+    .case,.about-content{
+        flex-direction: row;
+    }
+    form input,textarea{
+        width:50vh;
+        height: 50px;
+        box-shadow: 2px 2px 2px 2px  var(--main-bg-shadow);
+        border: none;
+        
+    }
+    form input,textarea{
+        width:50vh;
+        height: 50px;
+        box-shadow: 2px 2px 2px 2px  var(--main-bg-shadow);
+        border: none;
+    }
+}
+
